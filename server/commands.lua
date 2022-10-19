@@ -25,9 +25,9 @@ ESX.RegisterCommand({'cardel', 'dv'}, 'admin', function(xPlayer, args, showError
 		if DoesEntityExist(Vehicle) then
 			DeleteEntity(Vehicle)
 		end
-		print(GetVehicleNumberPlateText(Vehicle), type(GetVehicleNumberPlateText(Vehicle)))                           --We want to Check giving a Plate and waht type ist the plate- string etc.
-		local success = exports["VehicleKeyChain"]:RemoveTempKey(xPlayer.source, GetVehicleNumberPlateText(Vehicle))  --VKC|Kimi Callbacks: Want to REMOVE a Temp-Key when Delete a Vehicle
-		print('TempKey entfernt: '..tostring(success))                                                                --THIS Print say you if TempKey is successful removed
+		print(GetVehicleNumberPlateText(Vehicle), type(GetVehicleNumberPlateText(Vehicle)))				--We want to Check giving a Plate and waht type ist the plate- string etc.
+		local success = exports["VehicleKeyChain"]:RemoveTempKey(xPlayer.source, GetVehicleNumberPlateText(Vehicle))	--VKC|Kimi Callbacks: Want to REMOVE a Temp-Key when Delete a Vehicle
+		print('TempKey removed: '..tostring(success))									--This Print say you if TempKey is successful removed
 	end
 end, false, {help = _U('command_cardel'), validate = false, arguments = {
 	{name = 'radius',validate = false, help = _U('command_cardel_radius'), type = 'number'}
