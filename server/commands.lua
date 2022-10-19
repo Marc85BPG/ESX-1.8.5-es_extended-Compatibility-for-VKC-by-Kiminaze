@@ -1,5 +1,5 @@
 --es_extended/server/commands.lua
---Suche nach dem RegisterNetEvent 'ESX.RegisterCommand('car', 'admin',' sowie 'ESX.RegisterCommand({'cardel', 'dv'}, 'admin','
+--Search for the RegisterNetEvent 'ESX.RegisterCommand('car', 'admin',' sowie 'ESX.RegisterCommand({'cardel', 'dv'}, 'admin','
 
 --In Line 28 you can comment out the PRINT! Its to check the function for Plate
 --In Line 29 we add the Export from Resource Kimi_Callbacks (resource is needed) for VKC, to Remove the TempKey
