@@ -1,9 +1,9 @@
 --es_extended/server/commands.lua
 --Suche nach dem RegisterNetEvent 'ESX.RegisterCommand('car', 'admin',' sowie 'ESX.RegisterCommand({'cardel', 'dv'}, 'admin','
 
---In Line 32 you can comment out the PRINT! Its to check the function for Plate
---In Line 33 we add the Export from Resource Kimi_Callbacks (resource is needed) for VKC, to Remove the TempKey
---In Line 34 you can comment out the PRINT! Its to check the function remove the TempKey after delete vehicle via Command (/cardel)
+--In Line 28 you can comment out the PRINT! Its to check the function for Plate
+--In Line 29 we add the Export from Resource Kimi_Callbacks (resource is needed) for VKC, to Remove the TempKey
+--In Line 30 you can comment out the PRINT! Its to check the function remove the TempKey after delete vehicle via Command (/cardel)
 
 ESX.RegisterCommand('car', 'admin', function(xPlayer, args, showError)
 	local GameBuild = tonumber(GetConvar("sv_enforceGameBuild", 1604))
