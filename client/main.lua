@@ -2,7 +2,7 @@
 
 --Search for RegisterNetEvent 'esx:spawnVehicle'
 -- Inside the TriggerServerCallbacks AFTER 'SetVehicleNeonLightsColour' Add:
-TriggerServerEvent('esx:createTempKey', GetVehicleNumberPlateText(vehicle))
+--TriggerServerEvent('esx:createTempKey', GetVehicleNumberPlateText(vehicle))
 
 -- See Example in Line 45!
 --We are Done here! Now we give a Temporary Key when spawn a car via Commands like /car XXXX (Works also in txAdmin)
