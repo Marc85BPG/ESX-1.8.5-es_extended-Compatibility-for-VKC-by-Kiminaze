@@ -21,29 +21,29 @@ AddEventHandler('esx:spawnVehicle', function(vehicle)
 					TaskWarpPedIntoVehicle(ESX.PlayerData.ped, vehicle, -1)
 					SetVehicleDirtLevel(vehicle, 0)
 					SetVehicleFuelLevel(vehicle, 100.0)
-					SetEntityAsMissionEntity(vehicle, true, true)									  -- Persistant Vehicle
+					SetEntityAsMissionEntity(vehicle, true, true)				-- Persistant Vehicle
 
 					if Config.MaxAdminVehicles then 													      -- Max out vehicle upgrades
 						SetVehicleExplodesOnHighExplosionDamage(vehicle, true)
 						SetVehicleModKit(vehicle, 0)
-						SetVehicleMod(vehicle, 11, 3, true)                           -- modEngine
-						SetVehicleMod(vehicle, 12, 2, true)                           -- modBrakes
-						SetVehicleMod(vehicle, 13, 2, false)                          -- modTransmission
-						SetVehicleMod(vehicle, 15, 3, true)                           -- modSuspension
-						SetVehicleMod(vehicle, 16, 4, true)                           -- modArmor
-						ToggleVehicleMod(vehicle, 18, true)                           -- modTurbo
+						SetVehicleMod(vehicle, 11, 3, true)				-- modEngine
+						SetVehicleMod(vehicle, 12, 2, true)				-- modBrakes
+						SetVehicleMod(vehicle, 13, 2, false)				-- modTransmission
+						SetVehicleMod(vehicle, 15, 3, true)				-- modSuspension
+						SetVehicleMod(vehicle, 16, 4, true)				-- modArmor
+						ToggleVehicleMod(vehicle, 18, true)				-- modTurbo
 						SetVehicleTurboPressure(vehicle, 100.0)
-						SetVehicleNumberPlateText(vehicle, "SCL RP")									--SpawnedVehicle Numberplate
+						SetVehicleNumberPlateText(vehicle, "SCL RP")			--SpawnedVehicle Numberplate
 						SetVehicleNumberPlateTextIndex(vehicle, 1)
 						SetVehicleNitroEnabled(vehicle, true)
 
 						for i=0, 3 do
 							SetVehicleNeonLightEnabled(vehicle, i, true)
 						end
-						SetVehicleNeonLightsColour(vehicle, 55, 140, 191)             -- ESX Blue
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
-						TriggerServerEvent('esx:createTempKey', GetVehicleNumberPlateText(vehicle))		--Here we create a New separate Trigger the Server-Event for VKC called esx:createTempKey
-            -------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+						SetVehicleNeonLightsColour(vehicle, 55, 140, 191)		-- ESX Blue
+            
+						TriggerServerEvent('esx:createTempKey', GetVehicleNumberPlateText(vehicle))	--Here we create a New separate Trigger the Server-Event for VKC called esx:createTempKey
+            
 					end
 				end)
 			else
