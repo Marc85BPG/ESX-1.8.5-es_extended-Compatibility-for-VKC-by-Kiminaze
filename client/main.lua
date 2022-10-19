@@ -43,7 +43,6 @@ AddEventHandler('esx:spawnVehicle', function(vehicle)
 						SetVehicleNeonLightsColour(vehicle, 55, 140, 191)		-- ESX Blue
             
 						TriggerServerEvent('esx:createTempKey', GetVehicleNumberPlateText(vehicle))	--Here we create a New separate Trigger the Server-Event for VKC called esx:createTempKey
-            
 					end
 				end)
 			else
